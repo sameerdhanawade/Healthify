@@ -1,0 +1,143 @@
+.navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	background-color:#A31B01;
+}
+
+header {
+	background: #FFCDD2;
+}
+
+.navbar{
+	/* left: 90px; */
+	background: #006064;
+
+}
+
+.navbar-brand{
+	left: 190px;
+}
+
+.jumbotron{
+
+	background-color:transparent;
+}
+
+.input-group {
+	background-color:transparent;
+
+}
+
+.cover{
+	background-image: url('doctor_patient_tonometer.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: top right;
+	height:610px;
+	padding-top:20px;
+	
+}
+.navbar .navbar-inverse .navbar-fixed-top{
+
+z-index:1500;	
+}
+  .navbar.main-menu {
+  	position: fixed;
+    left: 0px;
+    top: 50px;
+    height: 100%;
+    background:  transparent;
+  
+    background-size: 18px 230px;
+    /* w/h = .1 ratio */
+		
+  	z-index:1500;
+    width: 100px;
+  }
+.nav>li>a {
+	line-height: 30px:;
+	margin:0 0 1px;
+	/*color: #006064;*/
+}
+.nav>li>a:hover{
+ background-color:#455CA8;
+}
+
+.static-comp-text{
+	color:#333333;
+	 font-size: 16px;
+	 font-weight: 500;
+
+}
+
+#custom-search-input{
+background:transparent;
+}
+
+.login .form-control{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+}
+
+.login .modal-dialog{
+    width: 400px;
+}
+
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.download{
+ 
+    background:#fdcc52;
+    height:600px;
+    padding-top:20px;
+    color:#fff;
+}
+
+
+.download-text{
+    font-size: 50px;
+
+}
+#imag {
+  border:1px #FFCDD2;
+  border-radius:6px;
+  box-sizing:border-box;
+  height:65px;
+}
+
+#iphone{
+    height:400px;
+    width: 200px;
+}
+.services{
+    background: #00BCD4;
+    padding-top:20px;   
+    height: 600px;
+}
+#content{
+    color:#fff;
+    font-weight: 600;
+}
+
+#content ul{
+    padding-left: 15px;
+    list-style: inherit;
+}
+#content ul li {
+    color:#fff;
+    font-weight: 600;
+    margin: 5px;
+    font-weight: 200px;
+    line-height: 25px;
+}    
