@@ -35,7 +35,7 @@ header {
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: top right;
-	height:610px;
+	height:700px;
 	padding-top:20px;
 	
 }
@@ -77,17 +77,33 @@ background:transparent;
 }
 
 .login .form-control{
+    border-top: 5px;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.09);
     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
     color: #FFFFFF;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.login .btn-login{
+    width: 100%;
+    background:#00BBFF;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
 }
 
 .login .modal-dialog{
-    width: 400px;
+    width: 350px;
 }
 
-.login .division {
+
+.login .modal-footer{
+    width:100%;
+}
+.login .division{
     float: none;
     margin: 0 auto 18px;
     overflow: hidden;
@@ -96,10 +112,53 @@ background:transparent;
     width: 100%;
 }
 
+.login .division  .line.l{
+left: 0;  
+}
+
+.login .division  .line.r{
+right: 0;  
+}
+
+.login .division  .line{
+    border: 1px solid #DFDFDF;
+    width:34%;
+    top: 15px;
+
+    position: absolute;
+}
+.login .social .google{
+
+    background-color: #F74933;
+    padding: 15px;
+    border-radius: 100px; 
+    display:inline-block;
+    margin: 0 50px;
+}
+
+.login .social .circle{
+    color: #fff;
+
+}
+
+
+.login .social .facebook{
+
+    background-color: #F74933;
+    padding: 15px;
+    border-radius: 100px; 
+    display:inline-block;
+    margin: 0 50px;
+}
+.login .social .facebook{
+    color: #fff;
+    background-color:#455CA8 ;    
+}
+
 .download{
  
     background:#fdcc52;
-    height:600px;
+    height:700px;
     padding-top:20px;
     color:#fff;
 }
@@ -141,3 +200,10 @@ background:transparent;
     font-weight: 200px;
     line-height: 25px;
 }    
+
+#signup{
+    color: #00BBFF;
+    background-color: #fff;
+    border: 1px solid #DFDFDF;
+}
+
