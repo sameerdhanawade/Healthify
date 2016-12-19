@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 51px;
+  }
+
+
+.sidebar-search{
+	padding: 15px;
+}
+
+.nav>li>a:hover{
+	padding: 20px;
+}
+.user-wrapper {
+	width: 210px;
+	height: 200px;
+	margin: 10px;	
+}
+
+.sidebar .sidebar-nav.navbar-collapse{
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #ffffff;
+	height: 610px;
+}
+
+#wrapper{
+	width: 100%;
+}
+
+#page-wrapper{
+	margin: 0 0 0 250px;
+}
+
+.panel{
+	margin-left: 15px;
+	padding: 10px; 
+	
+}
+
+.panel:hover{
+	margin-left: 15px;
+	padding: 20px; 
+	
+}
+
