@@ -203,7 +203,81 @@ right: 0;
 
 #signup{
     color: #00BBFF;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border: 1px solid #DFDFDF;
+        margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 150px;
+
 }
 
+.form-control{
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+    border-bottom: 1px solid #FFCDD2;
+}
+
+
+#signupbutton{
+    width: 100%;
+    background-color: red;
+    color: black;
+    margin-top: 15px;
+    padding: 10px;
+}
+#Docs
+{
+    margin-top: 0px;
+    
+    display: inline-block;
+    width: 250px;
+    max-width: 600px;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    text-align: left;
+    color: #999;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid hsla(0,0%,100%,.5);
+    border-radius: 2px;
+    background-image: fa fa-search fa-3x;
+    background-color: hsla(0,0%,100%,.9);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 13px;
+    box-sizing: border-box;
+}
+
+#City{
+
+    margin-top: 0px;
+    margin-left: 30px; 
+    display: inline-block;
+    width: 200px;
+    max-width: 600px;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    text-align: left;
+    color: #999;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-right: 1px solid;
+    border: 1px solid hsla(0,0%,100%,.5);
+    border-radius: 2px;
+    background-image: url(/images/find-grey@3x.png);
+    background-color: hsla(0,0%,100%,.9);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 13px;
+    box-sizing: border-box;
+}
+.nav{
+        margin-left: -22px;
+}

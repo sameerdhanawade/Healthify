@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width:device-width,initialscale=1">
+	<link rel="icon" href="../../favicon.ico">
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="D:\Healthify\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="Healthify.css" rel="stylesheet">
+	<title>Healthify</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> 
+		   		<div class="container">
+	   				<div class="navbar-header">
+	   					
+	   				<a class="navbar-brand" href="#">Healthify</a>
+	   				</div>	
+	   				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">	  
+						<li><a href="#download"> Download App</a></li>
+						<li><a  href="#"><span class="glyphicon glyphicon-user"></span> Healthify for Doctors</a></li>
+      					<li><a  data-toggle="modal" href="#myModal" ><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
+					</ul>
+					</div>
+
+	 				</div>
+	 			</div>	
+	 </nav>
+	 <!--
+	 <div class="navbar main-menu navbar-collapse collapse">
+	  	<ul class="nav">
+	  	 
+	    <li><a href="#" class="text-center" ><img src="Medicines (2).png"><span class="static-comp-text">Medicines</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Experiment.png"><span class="static-comp-text">Labs</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Consult.png"><span class="static-comp-text">e-Consult</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Products.png"><span class="static-comp-text">Health Products</span></a></li>
+	   	<li><a href="#" class="text-center"><img src="ambulance.png"><span class="static-comp-text">Services</span></a></li> 
+	    <li><a href="#" class="text-center"><img src="insurance.png"><span class="static-comp-text">Insurance</span></a></li>
+	  	</ul>
+	</div>
+	-->
+	<div class="navbar-default sidebar" role="navigation">
+		<div class="sidebar-nav navbar-collapse">
+			  <ul class="nav" id="side-menu">
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+			  </ul>
+		</div>	
+ 	</div>
+</body>	
+</html>
