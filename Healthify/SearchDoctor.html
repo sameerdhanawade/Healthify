@@ -6,70 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width:device-width,initialscale=1">
     <link rel="icon" href="../../favicon.ico">
-
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="D:\Healthify\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angucomplete-alt/2.4.1/angucomplete-alt.min.js"></script>
+    <script type="text/javascript" src="Doctor.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <link href="doctor_Dashboard.css" rel="stylesheet">
     <title>Healthify</title>
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top"> 
-                <div class="container">
-                    <div class="navbar-header">
-                        
-                    <a class="navbar-brand" href="#">Healthify</a>
-                    </div>  
-                    <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#download"> Download App</a></li>
-                        <li><a  href="#"><span class="glyphicon glyphicon-user"></span> Healthify for Doctors</a></li>
-                        <li><a  data-toggle="modal" href="#myModal" ><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
-                    </ul>
-                    </div>
+<script>
+$(function() {
+    var availableTags = [
+        "Banglore",
+        "Chennai",
+        "Delhi",
+        "Hyderabad",
+        "Kolkata",
+        "Mumbai",
+        "Pune",
+        "Ahmedabad"
+    ];
+    $("#City").autocomplete({
+        source: availableTags
+    });
+});
+</script>
 
-                    </div>
-                </div>  
-        </nav>
-
-          <div class="cover">
+<body ng-app="Doctor">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-              <div>
-                    <br /><br />
-                    <h2 class="text-center"> Search Doctors</h2>
-                    <br />
-                    <div class="row">
-                      <div class="col-md-3">
-                        </div>
-
-                        <div class="col-md-6">
-                           <div class="col-md-4 test">
-                                <span class="text-center"> Find Doctors</span>
-                           </div> 
-                            <div class="col-md-4 test">
-                                <span class="text-center"> Book Appointment</span>
-                           </div> 
-                            <div class="col-md-4 best">
-                                <span class="text-center"> Avoid Queue's</span>
-                           </div> 
-                        </div>
-                        <div class="col-md-3">
-                        </div>
-                    </div> 
-                    
-                        <div class="row">
-                             <input type="text" class="search-query form-control" id="City" placeholder=" City" />
-                              <input type="text" class="search-query form-control" id="Local" placeholder=" Locality" />
-                         <input type="text" class="search-query form-control" id="Docs" placeholder="Search Doctors,Hospitals & Labs etc" />
-
-                   
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Healthify</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#download"> Download App</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Healthify for Doctors</a></li>
+                    <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="cover">
+        <div class="container">
+            <div>
+                <br />
+                <br />
+                <h2 class="text-center"> Search Doctors</h2>
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
                     </div>
+                    <div class="col-md-6">
+                        <div class="col-md-4 test">
+                            <span class="text-center"> Find Doctors</span>
+                        </div>
+                        <div class="col-md-4 test">
+                            <span class="text-center"> Book Appointment</span>
+                        </div>
+                        <div class="col-md-4 best">
+                            <span class="text-center"> Avoid Queue's</span>
+                        </div>
                     </div>
-                    </div> 
+                    <div class="col-md-3">
                     </div>
-                    </div>             
+                </div>
+                <div class="row" ng-controller="mainCtrl">
+                    <input type="text" class="form-control" id="City" placeholder="City" />
+                    <input type="text" class="search-query form-control" id="Local" placeholder=" Locality" />
+                    <input type="text" class="search-query form-control" id="Docs" placeholder="Search Doctors,Hospitals & Labs etc" />
+                    <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
-</html>    
+
+</html>

@@ -107,7 +107,7 @@ a{
     line-height: 50px;
     padding: 20px;
     text-align: left;
-    color: #999;
+    color: black;
     font-size: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -115,7 +115,7 @@ a{
     border: 1px solid hsla(0,0%,100%,.5);
     border-radius: 2px;
     background-image: fa fa-search fa-3x;
-    background-color: hsla(0,0%,100%,.9);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: 13px;
@@ -141,7 +141,7 @@ a{
     border: 1px solid hsla(0,0%,100%,.5);
     border-radius: 2px;
     background-image: fa fa-search fa-3x;
-    background-color: hsla(0,0%,100%,.9);
+    background-color:   #fff;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: 13px;
@@ -152,7 +152,7 @@ a{
 	margin-top: 100px;
 	
     display: inline-block;
-    width: 100px;
+    width: 150px;
     max-width: 600px;
     height: 50px;
     line-height: 50px;
@@ -166,7 +166,7 @@ a{
     border: 1px solid hsla(0,0%,100%,.5);
     border-radius: 2px;
     background-image: url(/images/find-grey@3x.png);
-    background-color: hsla(0,0%,100%,.9);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: 13px;
@@ -178,7 +178,7 @@ a{
 	margin-top: 100px;
 	margin-left: 250px; 
     display: inline-block;
-    width: 100px;
+    width: 150px;
     max-width: 600px;
     height: 50px;
     line-height: 50px;
@@ -193,7 +193,7 @@ a{
     border: 1px solid hsla(0,0%,100%,.5);
     border-radius: 2px;
     background-image: url(/images/find-grey@3x.png);
-    background-color: hsla(0,0%,100%,.9);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: 13px;
@@ -253,4 +253,53 @@ a{
     
   background-color: #1E7E6D;  
   border: none;
+}
+
+
+ul.ui-autocomplete {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    padding: 0 0 4px 0;
+    
+    color: #333;
+    box-sizing: border-box;
+    line-height: 30px;
+    max-height: 210px;
+
+}
+.ui-menu-item .ui-menu-item-wrapper:hover
+{
+    border: none !important;
+    background-color:red;
+}
+
+#City:focus{
+    outline: 2px  blue;
+
+}
+
+.search-button {
+    height: 60px;
+    vertical-align: text-bottom;
+    margin-bottom: 4px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-bottom: -18px;
+    padding: 16px;
+    vertical-align: text-bottom;
+}
+
+#myImg{
+        margin-top: 41px;
+    /* vertical-align: middle; */
+    margin-left: 449px;
+    width: 199px;
+    height: 50px;
 }

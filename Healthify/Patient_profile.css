@@ -1,0 +1,15 @@
+.modal-content{
+	margin-top: 50px;
+	width: 1150px;
+	    height: 600px;
+}    
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+      float: initial;
+    margin-left: -280px;
+}
+
+.tab-content{
+
+	margin-top: 30px;
+}

@@ -7,14 +7,16 @@
     <meta name="viewport" content="width:device-width,initialscale=1">
     <link rel="icon" href="../../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="D:\Healthify\bootstrap.css">
+    
     <link href="D:\Healthify\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
-     <<script src="Patient_dashboard.js" type="text/javascript"></script>
+     <script src="D:\Healthify\Patient_dashboard.js" type="text/javascript"></script>
     <link href="doctor_Dashboard.css" rel="stylesheet">
     <title>Healthify</title>
 </head>
@@ -78,15 +80,16 @@
         </div>
         </div>
         <div id="page-wrapper">
-            <div class="row" ng-controller="nav">
+            <div class="row" ng-controller="nav" >
                 <div class="col-lg-12">
                     <h1 class="page-header">Dashboard</h1>
                 </div>
                 <div class="row">
+                    <!--
                     <div class="col-lg-3 col-md-6">
                     <span class="btn btn-default btn-login" id="Doctors">
                         <i class="fa fa-search fa-ssx"></i>
-                        <input id="Search_Doctors" ng-click="SearchDoc"  type="button" value="Search Doctors" >
+                        <input id="Search_Doctors" ng-click="open()"  type="button" value="Search Doctors" >
                     </span>
                      </div>
                      <div class="col-lg-3 col-md-6">
@@ -107,67 +110,44 @@
                         <input id="Products" type="button" value="Health Products" >
                     </span>
                      </div>
-                   <!-- <div class="col-lg-3 col-md-6">
-                    
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-search fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        
-                                        <div><h4>Search Doctors<h4></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                 -->
+                   <div class="col-lg-3 col-md-3">
+                        <span class="btn btn-default btn-login" id="Doctors">
+                                <i class="fa fa-search fa-1x"></i>
+                                <a href="SearchDoctor.html">Search Doctors</a>
+                               
+                        </span>
+                        
                     </div> 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">fa fa-flask fa-3x
-                                        <i class="fa fa-flask fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                      <div><h4>Book Lab Test</h4></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-3">
+                      
+                            <span class="btn btn-default btn-login" id="Doctors">
+                              
+                                     <i class="fa fa-flask fa-1x"></i>
+                                      <a href="Labs.html">Book Lab Test</a>
+                              
+                              
+                            </span>    
+                          
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-medkit fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div><h4>Buy Medicines</h4></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-3">
+                             <span class="btn btn-default btn-login" id="Doctors">
+                              
+                                    <i class="fa fa-medkit fa-1x"></i>
+                                    <a href="OrderMedicines.html">Buy Medicines</a>
+                                
+                             </span>    
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-product-hunt fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        
-                                        <div><h4>Health Products</h4></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-3">
+                            <span class="btn btn-default btn-login" id="Doctors">
+                             
+                                    <i class="fa fa-product-hunt fa-1x"></i>
+                                    <a href="HealthProducts.html"> Health Products</a>    
+                                       
+                              
+                            </span>    
                     </div>        
--->
+
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
