@@ -8,33 +8,28 @@
 	<link rel="icon" href="../../favicon.ico">
 	
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="D:\Healthify\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet" type="text/css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="D:\Healthify\font-awesome-4.1.0\css\font-awesome.min.css" rel="stylesheet" type="text/css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="Healthify.css" rel="stylesheet">
 	<title>Healthify</title>
 </head>
-<body>
-	<script type="text/javascript">
-
- function Login(id) {
-
-        location.href = "Patient_dashboard.html";
-    };
-
-
-
+<script type="text/javascript">
+	function loginAjax () {
+		location.href="Patient_dashboard.html";
+	}
 </script>
+<body>
 	<nav class="navbar navbar-inverse navbar-fixed-top"> 
 		   		<div class="container">
 	   				<div class="navbar-header">
 	   					
-	   				<a class="navbar-brand" href="Healthify.html">Healthify</a>
+	   				<a class="navbar-brand" href="#">Healthify</a>
 	   				</div>	
 	   				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#download"> Download App</a></li>
-						<li><a  href="Dashboard.html"><span class="glyphicon glyphicon-user"></span> Healthify for Doctors</a></li>
+						<li><a  href="#"><span class="glyphicon glyphicon-user"></span> Healthify for Doctors</a></li>
       					<li><a  data-toggle="modal" href="#myModal" ><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
 					</ul>
 					</div>
@@ -45,10 +40,10 @@
 	 <div class="navbar main-menu navbar-collapse collapse">
 	  	<ul class="nav">
 	  	 
-	    <li><a href="OrderMedicines.html" class="text-center" ><img src="Medicines (2).png"><span class="static-comp-text">Medicines</span></a></li>
-	    <li><a href="Labs.html" class="text-center"><img src="Experiment.png"><span class="static-comp-text">Labs</span></a></li>
-	    <li><a href="SearchDoctor.html" class="text-center"><img src="Consult.png"><span class="static-comp-text">e-Consult</span></a></li>
-	    <li><a href="HealthProducts.html" class="text-center"><img src="Products.png"><span class="static-comp-text">Health Products</span></a></li>
+	    <li><a href="#" class="text-center" ><img src="Medicines (2).png"><span class="static-comp-text">Medicines</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Experiment.png"><span class="static-comp-text">Labs</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Consult.png"><span class="static-comp-text">e-Consult</span></a></li>
+	    <li><a href="#" class="text-center"><img src="Products.png"><span class="static-comp-text">Health Products</span></a></li>
 	   	<!--<li><a href="#" class="text-center"><img src="ambulance.png"><span class="static-comp-text">Services</span></a></li> -->
 	    <li><a href="#" class="text-center"><img src="insurance.png"><span class="static-comp-text">Insurance</span></a></li>
 	  	</ul>
@@ -81,7 +76,7 @@
                                     <form method="post" action="/login" accept-charset="UTF-8">
                                     <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" id="redirect" type="button" value="LOGIN" onclick="Login(this)">
+                                    <input class="btn btn-default btn-login" type="button" value="LOGIN" onclick="loginAjax()">
                                     </form>
                                 </div>
 	       	 	</div>
@@ -106,14 +101,14 @@
 	 		  		<div id="custom-search-input" class="form-group form-group-lg">
 	 		  			<div class="col-xs-12 col-md-offset-3 col-md-3">
 
-	                    <input type="text" id="City" class="search-query form-control" placeholder="Enter City" />
+	                    <input type="text"  class="search-query form-control" placeholder="Enter City" />
 						</div>
 	 		  		<div class="col-xs-12 col-md-3">
-	                    <input type="text" id="Docs" class="search-query form-control" id="maindocname" placeholder="Doctors, Clinics, Labs Etc" />
+	                    <input type="text" class="search-query form-control" id="maindocname" placeholder="Doctors, Clinics, Labs Etc" />
 	             	</div>
 	                    
 	             	<div class="col-xs-12 col-md-3" >         
-	                	<span class="input-group-btn-lg ">
+	                	<span class="input-group-btn-lg">
 	                            <button class="btn btn-danger btn-lg" type="button">
 	                                <span> SEARCH</span>
 	                      		</button>
